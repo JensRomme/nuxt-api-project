@@ -1,10 +1,11 @@
-import { ref, onMounted, useRuntimeConfig } from 'vue'
+import { ref, onMounted } from 'vue'
+import { useRuntimeConfig } from '#app'
 import axios from 'axios'
 
 export function useApiDocs() {
   const apiDocs = ref(null)
   const error = ref(null)
-  const config = useRuntimeConfig()
+  const config = useRuntimeConfig() // Dit haalt de configuratie correct op
 
   onMounted(async () => {
     try {
@@ -17,5 +18,3 @@ export function useApiDocs() {
 
   return { apiDocs, error }
 }
-
-// je moeder

@@ -1,19 +1,16 @@
 export default defineNuxtConfig({
-  modules: ['@nuxt-alt/proxy'],
-
   runtimeConfig: {
     public: {
-      apiBase: '/api', // Proxy-pad
+      apiBase: '/api', // Gebruik een lokaal proxy-pad
     }
   },
 
   nitro: {
-    devProxy: {
-      '/api': {
-        target: 'https://betaalverzoek.intractief.nl/v3',
-        changeOrigin: true,
-        prependPath: true,
-      },
-    },
-  },
-})
+    routeRules: {
+      '/api/**': {
+        proxy: 'https://betaalverzoek.intractief.nl/v3/**',
+        cors: true
+      }
+    }
+  }
+});

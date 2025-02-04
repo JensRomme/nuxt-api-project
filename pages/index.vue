@@ -7,4 +7,3 @@ import ApiDocs from '@/components/ApiDocs.vue'
     <ApiDocs />
   </div>
 </template>
-
