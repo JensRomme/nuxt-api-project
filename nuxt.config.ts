@@ -12,5 +12,7 @@ export default defineNuxtConfig({
         cors: true
       }
     }
-  }
+  },
+
+  compatibilityDate: '2025-02-04'
 });
