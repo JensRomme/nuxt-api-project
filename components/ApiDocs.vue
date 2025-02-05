@@ -7,7 +7,7 @@ const { apiComponents, error } = useApiComponents()
 
 <template>
   <div>
-    <h1>API Componenten, Intractief betaalverzoek</h1> <!-- Titel, hoofdpagina -->
+    <h1>API Componenten van Intractief betaalverzoek</h1> <!-- Titel, hoofdpagina -->
 
     <div v-if="error" class="error">
       <p>Fout: {{ error }}</p>
@@ -23,7 +23,7 @@ const { apiComponents, error } = useApiComponents()
     </div>
 
     <div v-else>
-      <p>Componenten worden geladen...</p>
+      <p>Componenten worden geladen, even geduld :p</p>
     </div>
   </div>
 </template>

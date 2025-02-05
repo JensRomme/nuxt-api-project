@@ -2,4 +2,4 @@
   <NuxtPage />
 </template>
 
-<!-- weergeven nuxt in scherm-->
+<!-- Weergeven nuxt in scherm-->
