@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   nitro: {
     routeRules: {
       '/api/**': {
-        proxy: 'https://betaalverzoek.intractief.nl/v3/**',
+        proxy: 'https://betaalverzoek.intractief.nl/v3/**', // API Intractief -> /api/
         cors: true
       }
     }
