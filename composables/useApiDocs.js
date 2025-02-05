@@ -9,10 +9,10 @@ export function useApiComponents() {
 
   onMounted(async () => {
     try {
-      const response = await axios.get(`${config.public.apiBase}/api-docs`)
+      const response = await axios.get(`${config.public.apiBase}/api-docs`) // Proxy doorsturen naar de https
       apiComponents.value = response.data.components || {} // Haal alleen "components" op
     } catch (err) {
-      error.value = err.message
+      error.value = err.message // Foutmelding
     }
   })
 

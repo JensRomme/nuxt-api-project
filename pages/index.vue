@@ -7,3 +7,5 @@ import ApiDocs from '@/components/ApiDocs.vue'
     <ApiDocs />
   </div>
 </template>
+ 
+<!-- inmporteren en tonen van ApiDocs.vue-->
